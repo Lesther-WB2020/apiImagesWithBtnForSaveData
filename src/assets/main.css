@@ -1,0 +1,68 @@
+/*
+.ImAClass{}
+#ImAnId{}
+*/
+h1{
+    color: blue;
+    -webkit-text-stroke: 1px black;
+}
+#presentation{
+    width: 100%;
+    height: 300px;
+    background-image: url('./img/backgroundImage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(11,44,85, 0.60);
+    background-blend-mode: darken;
+    color: #e3e3e3;
+    font-weight: bold;
+}
+#containerContent{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    width: 100%;
+    align-content: center;
+    vertical-align: middle;
+}
+#btnSearch{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+}
+#btnSearch:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+#dadTable{
+    width: 100%;
+    display: table;
+}
+#contentAnswer{
+    width: 100%;
+    min-width: max-content;
+    display: table-cell;
+    vertical-align: middle;
+}
+#nRowAnswer{
+    width: 100%;
+    min-width: 100%;
+}
+body{
+    background-color: rgb(33, 35, 38);
+}
+#btnConsultarDB{
+    position: relative;
+    float: right;
+}
+#btnGuardar{
+    align-self: center;
+    align-content: center;
+    vertical-align: middle;
+}

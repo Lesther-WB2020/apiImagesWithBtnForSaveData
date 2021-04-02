@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/main.css">
+</head>
+<body>
+    <div id="containerContent">
+        <button id="btnConsultarDB" class="btn btn-primary">VER GUARDADOS</button>
+            <div id="presentation">
+                <h1>BIENVENID@</h1>
+                <p>ESTE PROGRAMA HACE USO DE UNA API CUYA FUNCIONALIDAD ES DEVOLVER IMÁGENES CON BASE</p>
+                <p>A LO QUE TÚ ESPECIFIQUES EN LA CAJA DE TEXTO. PUEDES HACER DE TU BÚSQUEDA ALGO </p>
+                <p>MÁS ESPECÍFICO EMPLEANDO LOS FILTROS QUE SE ENCUENTRAN A LA DERECHA. LA HERRAMIENTA</p>
+                <p>ESTÁ CONFIGURADA PARA RECIBIR INPUTS EN ESPAÑOL, HAZ TUS BÚSQUEDAS EN ESE IDIOMA</p>
+                <p>PARA GARANTIZAR QUE LOS RESULTADOS SEAN OBTENIDOS DE FORMA CORRECTA.</p>
+                <div id="searchTerms">
+                            <label for="userSearch">BUSCAR IMÁGENES DE: </label>
+                            <input id="userSearch" type="text" placeholder="Gatitos Tiernos" required>
+                            <label for="orientation">ORIENTACIÓN: </label>
+                            <select id="orientation" required>
+                                <option value="horizontal">HORIZONTAL</option>
+                                <option value="vertical">VERTICAL</option>
+                                <option value="all">AMBOS</option>
+                            </select>
+                            <label for="judgment">CRITERIO: </label>
+                            <select id="judgment">
+                                <option value="popular">POPULAR</option>
+                                <option value="latest">MÁS RECIENTE</option>
+                            </select>
+                            <input id="btnSearch" type="button" value="BUSCAR">
+                </div>
+            </div>
+            <div id="dadTable">
+                <table class="table table-dark table-hover table-striped" id="contentAnswer" >
+                    <tbody id="nRowAnswer">
+
+                    </tbody>
+                </table>
+            </div>  
+    </div>
+    <script type="module" src="./render.js"></script>
+</body>
+</html>
